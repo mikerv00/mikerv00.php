@@ -1,0 +1,201 @@
+
+/* menu */
+.logo{
+    width: 3em;
+    height: auto;
+}
+
+
+/* .menu-li li :hover{
+  border-bottom:1px solid black;
+} */
+.menu-li a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.d-cart{
+ height: 4.5rem;
+ width: 4.5rem;
+ background-color: #a5641a;
+}
+.dl-cart{
+  height: 3rem;
+  width: 3rem;
+  background-color: #a5641a;
+}
+.cart{
+  width: 30px;
+}
+
+
+/* presentación */
+header{
+  height: 605px;
+  width: 100%;
+  background-image: url("../imagenes/Playera7.jpg");
+  background-attachment:fixed;
+  background-size:cover;
+}
+.bg-color{
+  background-color:  rgba(58, 44, 18, 0.8);
+}
+.logo-nombre{
+  font-size: 40px;
+ }
+ .logoPresentacion{
+  width: 100px;
+}
+
+/* productos */
+.productos-box{
+  background: linear-gradient(to right, #8a450d, #460c08);
+}
+.card>img:hover{
+  transform: scale(1.1);
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+.car-ind:hover{
+  box-shadow: 5px 5px 10px #f3dec2;
+  animation-duration: 3s;
+}
+/* .card img{
+  width:260px;
+  height: 250px;
+  object-fit: cover;
+  position:relative;
+} */
+
+/*contacto */
+.contacto{
+  width: auto;
+  height: 55vh;
+  background-color: rgba(137, 77, 28, 0.5);
+  background-image: url("../imagenes/estadio.jpg");
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.contacto2{
+  background-color: #462608;
+}
+.contacto-box{
+  background-color: rgba(255, 255, 255, 0.4);
+  /* -webkit-backdrop-filter: blur(5px); */
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+}
+.contacto-box:hover{
+  background-color: rgba(255, 255, 255, 0.35); 
+}
+.contacto-box>h2{
+  background-color: #a5641a;
+}
+
+/* footer */
+.redesC{
+ background-color: #a5641a;
+}
+footer h2{
+  color: #ff5e00;
+}
+footer h3{
+  color: #FF8A00;
+}
+footer img{
+  width: 2.5rem;
+  height: auto;
+}
+.imgGaleria{
+  object-fit: contain;
+}
+
+
+/* iniciar sesion */
+.inic{
+  height: 105vh;
+  background-color: rgb(37, 37, 37);
+  background-color: rgb(61, 37, 31);
+}
+.reg{
+  height: 105vh;
+  background-color: rgb(61, 42, 31);
+  background-color: rgb(37, 37, 37);
+}
+
+/* tamaños */
+/* telefono */
+@media screen and ( min-width:480px){
+  .logo-nombre{
+    font-size: 70px;
+   }
+   .logoPresentacion{
+    width: 120px;
+  }
+}
+/* tableta */
+@media screen and ( min-width:768px){
+  .logo-nombre{
+    font-size: 100px;
+   }
+   .logoPresentacion{
+    width: 150px;
+  }
+}
+/* escritorio */
+@media screen and ( min-width:992px){
+  .logo-nombre{
+    font-size: 140px;
+   }
+   .logoPresentacion{
+    width: 190px;
+  }
+
+  .menu-li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #a5641a, #461f08);
+    z-index: 1;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  .menu-li a:hover::before { 
+    transform: scaleX(1);
+  }
+  .menu-li a::before{
+    transform-origin: center;
+  }
+
+}
+
+/* Colores FutMerch */
+  /* Color Theme Swatches in Hex */
+.Green-palet-1-hex { color: #3d1e0c; }
+.Green-palet-2-hex { color: #c6936a; }
+.Green-palet-3-hex { color: #bd6f26; }
+.Green-palet-4-hex { color: #3d261f; }
+.Green-palet-5-hex { color: #a5641a; }
+
+/* Color Theme Swatches in RGBA */
+.Green-palet-1-rgba { color: rgba(16, 61, 11, 1); }
+.Green-palet-2-rgba { color: rgba(105, 198, 98, 1); }
+.Green-palet-3-rgba { color: rgba(47, 188, 38, 1); }
+.Green-palet-4-rgba { color: rgba(33, 61, 31, 1); }
+.Green-palet-5-rgba { color: rgba(35, 137, 28, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Green-palet-1-hsla { color: hsla(115, 67, 14, 1); }
+.Green-palet-2-hsla { color: hsla(115, 47, 58, 1); }
+.Green-palet-3-hsla { color: hsla(116, 66, 44, 1); }
+.Green-palet-4-hsla { color: hsla(116, 32, 18, 1); }
+.Green-palet-5-hsla { color: hsla(116, 66, 32, 1); }
